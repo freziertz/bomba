@@ -947,7 +947,7 @@
           "response": [
             {
               "id": "8364e324-1e88-44a6-a4b8-192c696ccfac",
-              "name": "Delete User",
+              "name": "Delete Article",
               "originalRequest": {
                 "method": "DELETE",
                 "header": [
