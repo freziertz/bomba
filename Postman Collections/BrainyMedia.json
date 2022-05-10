@@ -476,6 +476,72 @@
             "url": "http://127.0.0.1:8000/api/reset"
           },
           "response": []
+        },
+        {
+          "name": "Delete User",
+          "id": "07b79443-0ac3-4ac9-92e4-11051608be98",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {
+              "accept": true
+            }
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/vnd.api+json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/vnd.api+json",
+                "type": "text"
+              }
+            ],
+            "url": "/users/1"
+          },
+          "response": [
+            {
+              "id": "641bd433-5269-480a-8006-86eb05b34506",
+              "name": "Delete User",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  }
+                ],
+                "url": "/users/1"
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "Accept",
+                  "value": "application/vnd.api+json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date"
+                }
+              ],
+              "responseTime": null,
+              "body": ""
+            }
+          ]
         }
       ],
       "id": "218898fc-12e2-44a3-a035-ca9b4c3cec7c"
