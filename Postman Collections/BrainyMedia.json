@@ -758,6 +758,100 @@
               "body": "{\r\n    \"data\":{\r\n        \"id\":\"1\",\r\n        \"type\":\"users\",\r\n        \"attributes\":{\r\n            \"username\":\"JohnDoe\",\r\n  \t        \"name\":\"John Doe\",\r\n             \"email\":\"john.doe@gmail.com\",\r\n             \"created_at\": \"2019-01-01\",\r\n             \"updated_at\": \"2019-01-01\"\r\n        }\r\n        \r\n    }\r\n}"
             }
           ]
+        },
+        {
+          "name": "Article Update",
+          "id": "4cb77b5d-ac2b-48f4-88c3-2c44a4147f10",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {
+              "accept": true
+            }
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": {
+                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
+              }
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/vnd.api+json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Frezier",
+                  "type": "text"
+                },
+                {
+                  "key": "email",
+                  "value": "yahaya.frezier@datahousetza.com",
+                  "type": "text"
+                }
+              ]
+            },
+            "url": "http://127.0.0.1:8000/api/users/1"
+          },
+          "response": [
+            {
+              "id": "4b325bdd-974b-47fe-85dc-4387f8edd5ce",
+              "name": "Update User",
+              "originalRequest": {
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  }
+                ],
+                "url": "/users/1"
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "Accept",
+                  "value": "application/vnd.api+json",
+                  "description": "",
+                  "type": "text"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/vnd.api+json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date"
+                }
+              ],
+              "responseTime": null,
+              "body": "            {\r\n                \"id\":\"1\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"JohnDoe\",\r\n                    \"name\":\"John Doe\",\r\n                    \"email\":\"john.doe@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }"
+            }
+          ]
         }
       ],
       "id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
