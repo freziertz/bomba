@@ -653,7 +653,7 @@
           "response": [
             {
               "id": "4968f49a-20ed-49e9-b801-50ccef01bfc6",
-              "name": "All Users",
+              "name": "All Articles",
               "originalRequest": {
                 "method": "GET",
                 "header": [
