@@ -918,6 +918,72 @@
               "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article updated 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
             }
           ]
+        },
+        {
+          "name": "Delete Articles",
+          "id": "07e6ebe1-948f-4a61-ad05-6e26fbf4f8fc",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true,
+            "disabledSystemHeaders": {
+              "accept": true
+            }
+          },
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/vnd.api+json",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "value": "application/vnd.api+json",
+                "type": "text"
+              }
+            ],
+            "url": "/users/1"
+          },
+          "response": [
+            {
+              "id": "8364e324-1e88-44a6-a4b8-192c696ccfac",
+              "name": "Delete User",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "Content-Type",
+                    "value": "application/vnd.api+json",
+                    "type": "text"
+                  }
+                ],
+                "url": "/users/1"
+              },
+              "status": "No Content",
+              "code": 204,
+              "_postman_previewlanguage": "",
+              "header": [
+                {
+                  "key": "Accept",
+                  "value": "application/vnd.api+json",
+                  "description": "",
+                  "type": "text"
+                }
+              ],
+              "cookie": [
+                {
+                  "expires": "Invalid Date"
+                }
+              ],
+              "responseTime": null,
+              "body": ""
+            }
+          ]
         }
       ],
       "id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
