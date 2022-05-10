@@ -920,7 +920,7 @@
           ]
         },
         {
-          "name": "Delete Articles",
+          "name": "Delete Article",
           "id": "07e6ebe1-948f-4a61-ad05-6e26fbf4f8fc",
           "protocolProfileBehavior": {
             "disableBodyPruning": true,
