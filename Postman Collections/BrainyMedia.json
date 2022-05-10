@@ -793,12 +793,12 @@
               "mode": "formdata",
               "formdata": [
                 {
-                  "key": "name",
-                  "value": "Frezier",
+                  "key": "title",
+                  "value": "Main Heading for article updated 1",
                   "type": "text"
                 },
                 {
-                  "key": "email",
+                  "key": "subtitle",
                   "value": "yahaya.frezier@datahousetza.com",
                   "type": "text"
                 }
