@@ -792,7 +792,7 @@
           "response": [
             {
               "id": "ea329efc-f009-48f9-a01d-6120fd64b254",
-              "name": "Single User",
+              "name": "Single Article",
               "originalRequest": {
                 "method": "GET",
                 "header": [],
