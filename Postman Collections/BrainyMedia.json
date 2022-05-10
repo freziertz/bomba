@@ -809,7 +809,7 @@
           "response": [
             {
               "id": "4b325bdd-974b-47fe-85dc-4387f8edd5ce",
-              "name": "Update User",
+              "name": "Article Update",
               "originalRequest": {
                 "method": "PATCH",
                 "header": [
