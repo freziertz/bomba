@@ -734,7 +734,7 @@
                     "type": "text"
                   }
                 ],
-                "url": "http://127.0.0.1:8000/api/users"
+                "url": "http://127.0.0.1:8000/api/articles"
               },
               "status": "OK",
               "code": 200,
@@ -759,7 +759,7 @@
                 }
               ],
               "responseTime": null,
-              "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n            {\r\n                \"id\":\"2\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 2\",\r\n                    \"subtitle\":\"Sub heading for article 2\",\r\n                    \"body\":\"Body for article 2\",\r\n                    \"photo\":\"photo for article 2 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
+              "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n            {\r\n                \"id\":\"2\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 2\",\r\n                    \"subtitle\":\"Sub heading for article 2\",\r\n                    \"body\":\"Body for article 2\",\r\n                    \"photo\":\"photo for article 2 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n        ]\r\n\r\n}"
             }
           ]
         },
