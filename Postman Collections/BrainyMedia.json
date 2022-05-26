@@ -1,1007 +1,1007 @@
 {
-  "info": {
-    "_postman_id": "d6bff095-9055-4f31-965c-3fa65e66dac2",
-    "name": "BrainyMedia V1.0.0",
-    "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
-  },
-  "item": [
-    {
-      "name": "Users",
-      "item": [
-        {
-          "name": "User Register",
-          "id": "ff94b911-8145-4e39-a0a0-fcbb9d0e382e",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "'Bearer '.$accessToken",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "name",
-                  "value": "yahaya",
-                  "type": "text"
-                },
-                {
-                  "key": "email",
-                  "value": "freziertz@gmail.com",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "123456",
-                  "type": "text"
-                },
-                {
-                  "key": "c_password",
-                  "value": "123456",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://127.0.0.1:8000/api/register"
-          },
-          "response": [
-            {
-              "id": "4adb62a4-bdb6-4ad8-924c-ce07644f7340",
-              "name": "Create User",
-              "originalRequest": {
-                "method": "POST",
-                "header": [],
-                "url": "/users"
-              },
-              "status": "Created",
-              "code": 201,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": ""
-            }
-          ]
-        },
-        {
-          "name": "User Login",
-          "id": "86498cbe-f215-48b6-947b-3431fc6b43c2",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "59|ZIlPNbseni2hC5UaX58vtZ5ixg0LZQasYQNSfKDA"
-              }
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "'Bearer '.$accessToken",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "email",
-                  "value": "freziertz@gmail.com",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "123456",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://localhost:8000/api/login"
-          },
-          "response": []
-        },
-        {
-          "name": "User Logout",
-          "id": "91174e77-3649-4d2a-9621-f18313d8d36b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "16|BTW5IGXWWTm5fXUZamyBoq4dQDmM7kc9Kf6mXtOE"
-              }
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "url": "http://localhost:8000/api/logout"
-          },
-          "response": []
-        },
-        {
-          "name": "All Users",
-          "id": "cd23b311-a27c-4b58-8ff3-1b52e25fc0c4",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "63|UEneSQVd17rH45ntVbBTbTuPhYZemJ0gvgrtcaku"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "http://127.0.0.1:8000/api/users"
-          },
-          "response": [
-            {
-              "id": "545df7eb-9246-4f49-b320-465c1280f286",
-              "name": "All Users",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ]
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"JohnDoe\",\r\n                    \"name\":\"John Doe\",\r\n                    \"email\":\"john.doe@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n                        {\r\n                \"id\":\"2\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"Musa Ibrahim\",\r\n                    \"name\":\"Musa Ibrahim\",\r\n                    \"email\":\"musa.ibrahim@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "Single User",
-          "id": "e16ea0fd-de08-48d7-ae58-8d69c68e9a39",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "http://127.0.0.1:8000/api/users/1"
-          },
-          "response": [
-            {
-              "id": "f64f32f1-a5ff-4307-aff4-4d5917772af0",
-              "name": "Single User",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "/users/1"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "{\r\n    \"data\":{\r\n        \"id\":\"1\",\r\n        \"type\":\"users\",\r\n        \"attributes\":{\r\n            \"username\":\"JohnDoe\",\r\n  \t        \"name\":\"John Doe\",\r\n             \"email\":\"john.doe@gmail.com\",\r\n             \"created_at\": \"2019-01-01\",\r\n             \"updated_at\": \"2019-01-01\"\r\n        }\r\n        \r\n    }\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "Send Forgot Email",
-          "id": "85376068-02aa-4065-a3ba-b826bd61145d",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "email",
-                  "value": "yahaya.frezier@datahousetza.com",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://127.0.0.1:8000/api/email"
-          },
-          "response": []
-        },
-        {
-          "name": "User Update",
-          "id": "6540124e-86f6-48d6-aaf8-61b537c7d306",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
-              }
-            },
-            "method": "PATCH",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "",
-                "type": "text",
-                "disabled": true
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "name",
-                  "value": "Frezier",
-                  "type": "text"
-                },
-                {
-                  "key": "email",
-                  "value": "yahaya.frezier@datahousetza.com",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://127.0.0.1:8000/api/users/1"
-          },
-          "response": [
-            {
-              "id": "351007e8-3118-4074-98ab-41586d6664ad",
-              "name": "Update User",
-              "originalRequest": {
-                "method": "PATCH",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ],
-                "url": "/users/1"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "            {\r\n                \"id\":\"1\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"JohnDoe\",\r\n                    \"name\":\"John Doe\",\r\n                    \"email\":\"john.doe@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }"
-            }
-          ]
-        },
-        {
-          "name": "User Reset Password",
-          "id": "d5f73670-3fbf-4962-a558-135f3f37d4e0",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "token",
-                  "value": "6953e38f09865f4af8a13e6b3cd1115fdbc50e3d07570f49ee0f8efd7661eeea",
-                  "type": "text"
-                },
-                {
-                  "key": "email",
-                  "value": "yahaya.frezier@datahousetza.com",
-                  "type": "text"
-                },
-                {
-                  "key": "password",
-                  "value": "123456789",
-                  "type": "text"
-                },
-                {
-                  "key": "c_password",
-                  "value": "123456789",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://127.0.0.1:8000/api/reset"
-          },
-          "response": []
-        },
-        {
-          "name": "Delete User",
-          "id": "07b79443-0ac3-4ac9-92e4-11051608be98",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "/users/1"
-          },
-          "response": [
-            {
-              "id": "641bd433-5269-480a-8006-86eb05b34506",
-              "name": "Delete User",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ],
-                "url": "/users/1"
-              },
-              "status": "No Content",
-              "code": 204,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": ""
-            }
-          ]
-        }
-      ],
-      "id": "218898fc-12e2-44a3-a035-ca9b4c3cec7c"
-    },
-    {
-      "name": "Products",
-      "item": [
-        {
-          "name": "Create Product",
-          "id": "26901903-bf6b-4253-9c74-fdb1191fee43",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "6|oaLU4V91mJs3ryZVwJrRGMg1uJt9eXJdnnOQsHp5"
-              }
-            },
-            "method": "POST",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "'Bearer '.$accessToken",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "name",
-                  "value": "Mbao",
-                  "type": "text"
-                },
-                {
-                  "key": "detail",
-                  "value": "Mbao Mninga",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://localhost:8000/api/products"
-          },
-          "response": []
-        },
-        {
-          "name": "All Products",
-          "id": "0ad94a7a-e15b-473d-a9c3-221e0df4561c",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
-                "key": "Authorization",
-                "value": "'Bearer '.$accessToken",
-                "type": "text"
-              },
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "http://localhost:8000/api/users"
-          },
-          "response": []
-        }
-      ],
-      "id": "1a842a47-bb76-408d-a397-ec2b30a0f536"
-    },
-    {
-      "name": "Testing",
-      "item": [
-        {
-          "name": "Plain Request",
-          "id": "938d1804-7631-4b80-b924-c472ea3b878b",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {}
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": {
-              "raw": "http://127.0.0.1:8000/api/hello?",
-              "protocol": "http",
-              "host": [
-                "127",
-                "0",
-                "0",
-                "1"
-              ],
-              "port": "8000",
-              "path": [
-                "api",
-                "hello"
-              ],
-              "query": [
-                {
-                  "key": "",
-                  "value": null,
-                  "type": "text"
-                }
-              ]
-            }
-          },
-          "response": []
-        }
-      ],
-      "id": "d963bd59-84dd-4434-87b0-158a5a670a53"
-    },
-    {
-      "name": "Articles",
-      "item": [
-        {
-          "name": "All Articles",
-          "id": "b31ee6f5-a886-4c7a-a361-8383a6a21a9a",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "63|UEneSQVd17rH45ntVbBTbTuPhYZemJ0gvgrtcaku"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "http://127.0.0.1:8000/api/articles"
-          },
-          "response": [
-            {
-              "id": "4968f49a-20ed-49e9-b801-50ccef01bfc6",
-              "name": "All Articles",
-              "originalRequest": {
-                "method": "GET",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ],
-                "url": "http://127.0.0.1:8000/api/articles"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n            {\r\n                \"id\":\"2\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 2\",\r\n                    \"subtitle\":\"Sub heading for article 2\",\r\n                    \"body\":\"Body for article 2\",\r\n                    \"photo\":\"photo for article 2 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n        ]\r\n\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "Single Article",
-          "id": "94856999-b7d5-4882-b8f3-218664081208",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
-              }
-            },
-            "method": "GET",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "http://127.0.0.1:8000/api/users/1"
-          },
-          "response": [
-            {
-              "id": "ea329efc-f009-48f9-a01d-6120fd64b254",
-              "name": "Single Article",
-              "originalRequest": {
-                "method": "GET",
-                "header": [],
-                "url": "http://127.0.0.1:8000/api/authors/1"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "{\r\n    \"data\":{\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                },\r\n                \"relationships\": {\r\n                    \"users\": {\r\n                        \"links\": {\r\n                            \"self\": \"http://example.com/articles/1/relationships/users\",\r\n                            \"related\": \"http://example.com/articles/1/users\"\r\n                        },\r\n                        \"data\": {\r\n                                    \"id\": \"5\",\r\n                                    \"type\": \"users\"\r\n                                }\r\n                        }\r\n                }\r\n        }\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "Article Update",
-          "id": "4cb77b5d-ac2b-48f4-88c3-2c44a4147f10",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "auth": {
-              "type": "bearer",
-              "bearer": {
-                "token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
-              }
-            },
-            "method": "PATCH",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              },
-              {
-                "key": "Authorization",
-                "value": "",
-                "type": "text",
-                "disabled": true
-              }
-            ],
-            "body": {
-              "mode": "formdata",
-              "formdata": [
-                {
-                  "key": "title",
-                  "value": "Main Heading for article updated 1",
-                  "type": "text"
-                },
-                {
-                  "key": "subtitle",
-                  "value": "yahaya.frezier@datahousetza.com",
-                  "type": "text"
-                }
-              ]
-            },
-            "url": "http://127.0.0.1:8000/api/users/1"
-          },
-          "response": [
-            {
-              "id": "4b325bdd-974b-47fe-85dc-4387f8edd5ce",
-              "name": "Article Update",
-              "originalRequest": {
-                "method": "PATCH",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ],
-                "body": {
-                  "mode": "formdata",
-                  "formdata": [
-                    {
-                      "key": "title",
-                      "value": "Main Heading for article updated 1",
-                      "type": "text"
-                    },
-                    {
-                      "key": "subtitle",
-                      "value": "Sub heading for article updated 1",
-                      "type": "text"
-                    }
-                  ]
-                },
-                "url": "/articles/1"
-              },
-              "status": "OK",
-              "code": 200,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                },
-                {
-                  "key": "Content-Type",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article updated 1\",\r\n                    \"subtitle\":\"Sub heading for article updated 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
-            }
-          ]
-        },
-        {
-          "name": "Delete Article",
-          "id": "07e6ebe1-948f-4a61-ad05-6e26fbf4f8fc",
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true,
-            "disabledSystemHeaders": {
-              "accept": true
-            }
-          },
-          "request": {
-            "method": "DELETE",
-            "header": [
-              {
-                "key": "Accept",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              },
-              {
-                "key": "Content-Type",
-                "value": "application/vnd.api+json",
-                "type": "text"
-              }
-            ],
-            "url": "/users/1"
-          },
-          "response": [
-            {
-              "id": "8364e324-1e88-44a6-a4b8-192c696ccfac",
-              "name": "Delete Article",
-              "originalRequest": {
-                "method": "DELETE",
-                "header": [
-                  {
-                    "key": "Accept",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  },
-                  {
-                    "key": "Content-Type",
-                    "value": "application/vnd.api+json",
-                    "type": "text"
-                  }
-                ],
-                "url": "/users/1"
-              },
-              "status": "No Content",
-              "code": 204,
-              "_postman_previewlanguage": "",
-              "header": [
-                {
-                  "key": "Accept",
-                  "value": "application/vnd.api+json",
-                  "description": "",
-                  "type": "text"
-                }
-              ],
-              "cookie": [
-                {
-                  "expires": "Invalid Date"
-                }
-              ],
-              "responseTime": null,
-              "body": ""
-            }
-          ]
-        }
-      ],
-      "id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
-    }
-  ]
+	"info": {
+		"_postman_id": "d6bff095-9055-4f31-965c-3fa65e66dac2",
+		"name": "BrainyMedia V1.0.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "User Register",
+					"id": "ff94b911-8145-4e39-a0a0-fcbb9d0e382e",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "'Bearer '.$accessToken",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "yahaya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "freziertz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": [
+						{
+							"id": "4adb62a4-bdb6-4ad8-924c-ce07644f7340",
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "/users"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "User Login",
+					"id": "86498cbe-f215-48b6-947b-3431fc6b43c2",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "59|ZIlPNbseni2hC5UaX58vtZ5ixg0LZQasYQNSfKDA"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "'Bearer '.$accessToken",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "freziertz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8000/api/login"
+					},
+					"response": []
+				},
+				{
+					"name": "User Logout",
+					"id": "91174e77-3649-4d2a-9621-f18313d8d36b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "16|BTW5IGXWWTm5fXUZamyBoq4dQDmM7kc9Kf6mXtOE"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/logout"
+					},
+					"response": []
+				},
+				{
+					"name": "All Users",
+					"id": "cd23b311-a27c-4b58-8ff3-1b52e25fc0c4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "63|UEneSQVd17rH45ntVbBTbTuPhYZemJ0gvgrtcaku"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/users"
+					},
+					"response": [
+						{
+							"id": "545df7eb-9246-4f49-b320-465c1280f286",
+							"name": "All Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								]
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"JohnDoe\",\r\n                    \"name\":\"John Doe\",\r\n                    \"email\":\"john.doe@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n                        {\r\n                \"id\":\"2\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"Musa Ibrahim\",\r\n                    \"name\":\"Musa Ibrahim\",\r\n                    \"email\":\"musa.ibrahim@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Single User",
+					"id": "e16ea0fd-de08-48d7-ae58-8d69c68e9a39",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/users/1"
+					},
+					"response": [
+						{
+							"id": "f64f32f1-a5ff-4307-aff4-4d5917772af0",
+							"name": "Single User",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "/users/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":{\r\n        \"id\":\"1\",\r\n        \"type\":\"users\",\r\n        \"attributes\":{\r\n            \"username\":\"JohnDoe\",\r\n  \t        \"name\":\"John Doe\",\r\n             \"email\":\"john.doe@gmail.com\",\r\n             \"created_at\": \"2019-01-01\",\r\n             \"updated_at\": \"2019-01-01\"\r\n        }\r\n        \r\n    }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Send Forgot Email",
+					"id": "85376068-02aa-4065-a3ba-b826bd61145d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "yahaya.frezier@datahousetza.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/email"
+					},
+					"response": []
+				},
+				{
+					"name": "User Update",
+					"id": "6540124e-86f6-48d6-aaf8-61b537c7d306",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Frezier",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yahaya.frezier@datahousetza.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/1"
+					},
+					"response": [
+						{
+							"id": "351007e8-3118-4074-98ab-41586d6664ad",
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"url": "/users/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "            {\r\n                \"id\":\"1\",\r\n                \"type\":\"users\",\r\n                \"attributes\":{\r\n                    \"username\":\"JohnDoe\",\r\n                    \"name\":\"John Doe\",\r\n                    \"email\":\"john.doe@gmail.com\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }"
+						}
+					]
+				},
+				{
+					"name": "User Reset Password",
+					"id": "d5f73670-3fbf-4962-a558-135f3f37d4e0",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "token",
+									"value": "6953e38f09865f4af8a13e6b3cd1115fdbc50e3d07570f49ee0f8efd7661eeea",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "yahaya.frezier@datahousetza.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/reset"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"id": "07b79443-0ac3-4ac9-92e4-11051608be98",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "/users/1"
+					},
+					"response": [
+						{
+							"id": "641bd433-5269-480a-8006-86eb05b34506",
+							"name": "Delete User",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"url": "/users/1"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "218898fc-12e2-44a3-a035-ca9b4c3cec7c"
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Create Product",
+					"id": "26901903-bf6b-4253-9c74-fdb1191fee43",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "6|oaLU4V91mJs3ryZVwJrRGMg1uJt9eXJdnnOQsHp5"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "'Bearer '.$accessToken",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Mbao",
+									"type": "text"
+								},
+								{
+									"key": "detail",
+									"value": "Mbao Mninga",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8000/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "All Products",
+					"id": "0ad94a7a-e15b-473d-a9c3-221e0df4561c",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Authorization header generated by Postman.",
+								"key": "Authorization",
+								"value": "'Bearer '.$accessToken",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:8000/api/users"
+					},
+					"response": []
+				}
+			],
+			"id": "1a842a47-bb76-408d-a397-ec2b30a0f536"
+		},
+		{
+			"name": "Testing",
+			"item": [
+				{
+					"name": "Plain Request",
+					"id": "938d1804-7631-4b80-b924-c472ea3b878b",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hello?",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hello"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "d963bd59-84dd-4434-87b0-158a5a670a53"
+		},
+		{
+			"name": "Articles",
+			"item": [
+				{
+					"name": "All Articles",
+					"id": "b31ee6f5-a886-4c7a-a361-8383a6a21a9a",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "63|UEneSQVd17rH45ntVbBTbTuPhYZemJ0gvgrtcaku"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/articles"
+					},
+					"response": [
+						{
+							"id": "4968f49a-20ed-49e9-b801-50ccef01bfc6",
+							"name": "All Articles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:8000/api/articles"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n            {\r\n                \"id\":\"2\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 2\",\r\n                    \"subtitle\":\"Sub heading for article 2\",\r\n                    \"body\":\"Body for article 2\",\r\n                    \"photo\":\"photo for article 2 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n        ]\r\n\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Single Article",
+					"id": "94856999-b7d5-4882-b8f3-218664081208",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "100|4U5BZbdBgx7RRNvCAiPqJRVXevEUwwuwCiqdZc4i"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/articles/1"
+					},
+					"response": [
+						{
+							"id": "ea329efc-f009-48f9-a01d-6120fd64b254",
+							"name": "Single Article",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "http://127.0.0.1:8000/api/authors/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":{\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                },\r\n                \"relationships\": {\r\n                    \"users\": {\r\n                        \"links\": {\r\n                            \"self\": \"http://example.com/articles/1/relationships/users\",\r\n                            \"related\": \"http://example.com/articles/1/users\"\r\n                        },\r\n                        \"data\": {\r\n                                    \"id\": \"5\",\r\n                                    \"type\": \"users\"\r\n                                }\r\n                        }\r\n                }\r\n        }\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Article Update",
+					"id": "4cb77b5d-ac2b-48f4-88c3-2c44a4147f10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "13|X8j2Mcr2C5d1QAoSNUVya7gZNzGv0MA4WyLkOi7i"
+							}
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Main Heading for article updated 1",
+									"type": "text"
+								},
+								{
+									"key": "subtitle",
+									"value": "yahaya.frezier@datahousetza.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/users/1"
+					},
+					"response": [
+						{
+							"id": "4b325bdd-974b-47fe-85dc-4387f8edd5ce",
+							"name": "Article Update",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "Main Heading for article updated 1",
+											"type": "text"
+										},
+										{
+											"key": "subtitle",
+											"value": "Sub heading for article updated 1",
+											"type": "text"
+										}
+									]
+								},
+								"url": "/articles/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article updated 1\",\r\n                    \"subtitle\":\"Sub heading for article updated 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-02\"\r\n                }\r\n                \r\n            }\r\n\r\n}"
+						}
+					]
+				},
+				{
+					"name": "Delete Article",
+					"id": "07e6ebe1-948f-4a61-ad05-6e26fbf4f8fc",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "/users/1"
+					},
+					"response": [
+						{
+							"id": "8364e324-1e88-44a6-a4b8-192c696ccfac",
+							"name": "Delete Article",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"url": "/users/1"
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				}
+			],
+			"id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
+		}
+	]
 }
