@@ -999,6 +999,18 @@
 							"body": ""
 						}
 					]
+				},
+				{
+					"name": "New Request",
+					"id": "216cfaca-795f-44e1-b7ae-20c4427d9b08",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
 				}
 			],
 			"id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
