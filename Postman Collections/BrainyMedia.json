@@ -865,12 +865,12 @@
 								},
 								{
 									"key": "subtitle",
-									"value": "yahaya.frezier@datahousetza.com",
+									"value": "Sub heading for article updated 1",
 									"type": "text"
 								}
 							]
 						},
-						"url": "http://127.0.0.1:8000/api/users/1"
+						"url": "http://127.0.0.1:8000/api/articles/1"
 					},
 					"response": [
 						{
