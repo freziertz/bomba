@@ -764,6 +764,79 @@
 					]
 				},
 				{
+					"name": "Single Article and Athors",
+					"id": "0778e781-b119-4674-9ef4-de7b4e789270",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "63|UEneSQVd17rH45ntVbBTbTuPhYZemJ0gvgrtcaku"
+							}
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.api+json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:8000/api/articles"
+					},
+					"response": [
+						{
+							"id": "15c92147-6a56-4546-844d-1b0df4988107",
+							"name": "All Articles",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									},
+									{
+										"key": "Content-Type",
+										"value": "application/vnd.api+json",
+										"type": "text"
+									}
+								],
+								"url": "http://127.0.0.1:8000/api/articles"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": "{\r\n    \"data\":[\r\n            {\r\n                \"id\":\"1\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 1\",\r\n                    \"subtitle\":\"Sub heading for article 1\",\r\n                    \"body\":\"Body for article 1\",\r\n                    \"photo\":\"photo for article 1 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            },\r\n            {\r\n                \"id\":\"2\",\r\n                \"type\":\"articles\",\r\n                \"attributes\":{\r\n                    \"title\":\"Main Heading for article 2\",\r\n                    \"subtitle\":\"Sub heading for article 2\",\r\n                    \"body\":\"Body for article 2\",\r\n                    \"photo\":\"photo for article 2 which should be array\",\r\n                    \"created_at\": \"2019-01-01\",\r\n                    \"updated_at\": \"2019-01-01\"\r\n                }\r\n                \r\n            }\r\n        ]\r\n\r\n}"
+						}
+					]
+				},
+				{
 					"name": "Single Article",
 					"id": "94856999-b7d5-4882-b8f3-218664081208",
 					"protocolProfileBehavior": {
