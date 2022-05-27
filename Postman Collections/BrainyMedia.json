@@ -1112,28 +1112,28 @@
 							"mode": "formdata",
 							"formdata": [
 								{
-									"key": "name",
-									"value": "yahaya",
+									"key": "title",
+									"value": "Title of the article",
 									"type": "text"
 								},
 								{
-									"key": "email",
-									"value": "freziertz@gmail.com",
+									"key": "subtitle",
+									"value": "Subtitle of the article",
 									"type": "text"
 								},
 								{
-									"key": "password",
-									"value": "123456",
+									"key": "body",
+									"value": "body",
 									"type": "text"
 								},
 								{
-									"key": "c_password",
-									"value": "123456",
+									"key": "user_id",
+									"value": "1",
 									"type": "text"
 								}
 							]
 						},
-						"url": "http://127.0.0.1:8000/api/register"
+						"url": "http://127.0.0.1:8000/api/articles"
 					},
 					"response": [
 						{
