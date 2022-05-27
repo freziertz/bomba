@@ -1084,6 +1084,92 @@
 						"header": []
 					},
 					"response": []
+				},
+				{
+					"name": "Article Create",
+					"id": "cb387c6c-7468-4b14-ae69-983e9a740eff",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true,
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "'Bearer '.$accessToken",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "yahaya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "freziertz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:8000/api/register"
+					},
+					"response": [
+						{
+							"id": "16b18663-f189-4b6c-b355-4aedfab9ef11",
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"url": "/users"
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "",
+							"header": [
+								{
+									"key": "Accept",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/vnd.api+json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [
+								{
+									"expires": "Invalid Date"
+								}
+							],
+							"responseTime": null,
+							"body": ""
+						}
+					]
 				}
 			],
 			"id": "e132376c-8b66-4368-9b18-81550f1cb1f6"
