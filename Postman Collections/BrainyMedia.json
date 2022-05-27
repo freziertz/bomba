@@ -1095,6 +1095,12 @@
 						}
 					},
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "100|4U5BZbdBgx7RRNvCAiPqJRVXevEUwwuwCiqdZc4i"
+							}
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -1113,7 +1119,7 @@
 							"formdata": [
 								{
 									"key": "title",
-									"value": "Title of the article",
+									"value": "'Title of the article'",
 									"type": "text"
 								},
 								{
@@ -1129,6 +1135,21 @@
 								{
 									"key": "user_id",
 									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "language",
+									"value": "sw",
+									"type": "text"
+								},
+								{
+									"key": "abstract",
+									"value": "abstract of the body",
+									"type": "text"
+								},
+								{
+									"key": "url",
+									"value": "www.google.com",
 									"type": "text"
 								}
 							]
