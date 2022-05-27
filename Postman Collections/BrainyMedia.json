@@ -1091,7 +1091,13 @@
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true,
 						"disabledSystemHeaders": {
-							"accept": true
+							"accept": true,
+							"connection": true,
+							"accept-encoding": true,
+							"user-agent": true,
+							"host": true,
+							"content-length": true,
+							"content-type": true
 						}
 					},
 					"request": {
@@ -1119,7 +1125,7 @@
 							"formdata": [
 								{
 									"key": "title",
-									"value": "'Title of the article'",
+									"value": "Title of the article",
 									"type": "text"
 								},
 								{
@@ -1151,6 +1157,12 @@
 									"key": "url",
 									"value": "www.google.com",
 									"type": "text"
+								},
+								{
+									"key": "slug",
+									"value": "test",
+									"type": "text",
+									"disabled": true
 								}
 							]
 						},
